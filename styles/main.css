@@ -1,0 +1,18 @@
+code.terminal {
+  background: rgba(0, 0, 0, 0.1);
+  padding: 0 0 0 1rem;
+}
+code.note {
+  color: red;
+}
+
+.note {
+  color: blue;
+  font-style: italic;
+  text-align: center;
+}
+.note:before {
+  content: "| ";
+}
+
+/*# sourceMappingURL=main.css.map */
