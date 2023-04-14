@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/knacss.css">
+    <link rel="stylesheet" href="./styles/main.css">
     <title>DocHost</title>
 </head>
 <body>
@@ -14,50 +16,82 @@
         </p>
     </div>
 
-    <div class="temporary">
-        <h2>things I want to do around here :</h2>
-        <ul>
-            <li>reviser l'integration</li>
-            <li>faire un espace de prise de note / todolist rapide</li>
-            <li>faire de la conception</li>
-            <li>learn <a href="https://svelte.dev/">Svelte</a></li>
-            <li>tester l'hebergement sur mon domaine skeggang.net</li>
-            <li>préparer une pres' avec reveal.js</li>
-            <li>write few quicks articles on things I like (ecoconception, rootme ..)</li>
-            <li>write some apps ideas somewhere (eg:notify.me to remember where I was, what I was trying to do, remind me stuff to help me to not lose track of my work #ADHD baby</li>
-        </ul>
-    </div>
+    <section class="main-section layout-maxed">
+        <div class="temporary">
+            <h2>Things I want to do around here :</h2>
+            <ul>
+                <li>reviser l'integration</li>
+                <li>faire un espace de prise de note / todolist rapide</li>
+                <li>faire de la conception</li>
+                <li>learn <a href="https://svelte.dev/">Svelte</a></li>
+                <li>tester l'hebergement sur mon domaine skeggang.net</li>
+                <li>préparer une pres' avec reveal.js</li>
+                <li>write few quicks articles on things I like (ecoconception, rootme ..)</li>
+                <li>write some apps ideas somewhere (eg:notify.me to remember where I was, what I was trying to do, remind me stuff to help me to not lose track of my work #ADHD baby</li>
+                <li>mood tracker map with rollercoaster rendering (with a bit of <a href="https://www.manim.community/">manim</a> ?)</li>
+                <li></li>
+            </ul>
+        </div>
 
-    <div id="projects">
-        <h3>projects :</h3>
-        <ul>
-            <li>Svelte : <a href="./mySvelte.html">mySvelte</a></li>
-            <li>app mediatheque</li>
-        </ul>
-    </div>
+        <div id="projects">
+            <h3>projects :</h3>
+            <ul>
+                <li>Svelte : <a href="./mySvelte.html">mySvelte</a></li>
+                <li>app mediatheque</li>
+                <li>KNACSS</li>
+            </ul>
+        </div>
 
-    <div id="ressources">
-        <h3>must read and try things from : </h3>
-        <ul>
-            <li><a href="https://grafikart.fr/">grafikart</a></li>
-            <li><a href="https://www.alsacreations.com/">alsacreation</a></li>
-            <li><a href="https://www.freecodecamp.org/">freecodecamp</a></li>
-            <li><a href="https://translucide.net/">translucide</a></li>
-        </ul>
-    </div>
+        <div id="ressources">
+            <h3>must read and try things from : </h3>
+            <ul>
+                <li><a href="https://grafikart.fr/">grafikart</a></li>
+                <li><a href="https://www.alsacreations.com/">alsacreation</a></li>
+                <li><a href="https://www.freecodecamp.org/">freecodecamp</a></li>
+                <li><a href="https://translucide.net/">translucide</a></li>
+            </ul>
+        </div>
 
-    <div id="practice">
-        <h3>note/practices : </h3>
-        <ul>
-            <li><a target="_blank" href="https://www.alsacreations.com/astuce/lire/36-la-technique-du-reset-css.html">reset CSS par alsacreation</a> => je vais utiliser <a href="https://www.knacss.com/">KNACSS</a></li>
-        </ul>
-    </div>
+        <div id="practice">
+            <h3>note/practices on this website : </h3>
+            <ul>
+                <li><a target="_blank" href="https://www.alsacreations.com/astuce/lire/36-la-technique-du-reset-css.html">reset CSS</a> by alsacreation</a> => I'll use <a href="https://www.knacss.com/">KNACSS</a></li>
+                <li>I'll use <a href="https://sass-lang.com/dart-sass">sass</a>, via <a href="https://www.npmjs.com/package/sass">npm</a> </li>
+            </ul>
+        </div>
 
-    <div id="scss">
-        <ol>
-            <li>npm i -g sass</li>
-        </ol>
-    </div>
+        <div id="what-I-did">
+            <article id="sass">
+                <h3>mise en place de KNACSS</h3>
+                <p class="note">We'll take care how well the folders are organized, mine is to rework after I have a sufficently consistent project.</p>
+                <ol>
+                    <li>
+                        <code class="terminal">npm i -g sass</code>
+                    </li>
+                    <li>
+                        <code class="terminal">git clone https://github.com/alsacreations/KNACSS</code>
+                    </li>
+                    <li>
+                        <code class="terminal">sass knacss.scss knacs.css</code>
+                        <p>I'll do the same with my main.scss, so I'll have my KNACSS standardization (reset, lisibility) and my custom css file from sass.</p>
+                    </li>
+                </ol>
+            </article>
+            <article id="svelte">
+                <h3>Svelte project</h3>
+                <p>redoing the website as a svelte project</p>
+                <ul>
+                    <li>
+                        <code class="terminal">npm create svelte@latest docHost-svelte</code>
+                    </li>
+                    <li>I chose Sveltkit demo app (to try it out), JavaScript (later I'll do TypeScript)</li>
+                    <li><code class="terminal">cd .\docHost-svelte\</code></li>
+                </ul>
+            </article>
+        </div>
 
+    </section>
+
+    <script src="https://kit.fontawesome.com/ed8d6cd9d5.js" crossorigin="anonymous"></script>
 </body>
 </html>
